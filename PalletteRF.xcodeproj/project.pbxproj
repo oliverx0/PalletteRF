@@ -8,13 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		53C8F0DA1BC0321200D23F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F0D91BC0321200D23F5B /* main.m */; };
-		53C8F0DD1BC0321300D23F5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F0DC1BC0321300D23F5B /* AppDelegate.m */; };
-		53C8F0E01BC0321300D23F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F0DF1BC0321300D23F5B /* ViewController.m */; };
+		53C8F0E01BC0321300D23F5B /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F0DF1BC0321300D23F5B /* AppViewController.m */; };
 		53C8F0E31BC0321300D23F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C8F0E11BC0321300D23F5B /* Main.storyboard */; };
 		53C8F0E51BC0321300D23F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C8F0E41BC0321300D23F5B /* Assets.xcassets */; };
 		53C8F0E81BC0321300D23F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C8F0E61BC0321300D23F5B /* LaunchScreen.storyboard */; };
 		53C8F0F31BC0321300D23F5B /* PalletteRFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F0F21BC0321300D23F5B /* PalletteRFTests.m */; };
 		53C8F0FE1BC0321300D23F5B /* PalletteRFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F0FD1BC0321300D23F5B /* PalletteRFUITests.m */; };
+		53C8F10C1BC032EA00D23F5B /* rfduino in Resources */ = {isa = PBXBuildFile; fileRef = 53C8F10B1BC032EA00D23F5B /* rfduino */; settings = {ASSET_TAGS = (); }; };
+		53C8F10E1BC033F000D23F5B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C8F10D1BC033F000D23F5B /* CoreBluetooth.framework */; };
+		53C8F11C1BC034E500D23F5B /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1101BC034E500D23F5B /* AppDelegate.h */; };
+		53C8F11D1BC034E500D23F5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1111BC034E500D23F5B /* AppDelegate.m */; };
+		53C8F11E1BC034E500D23F5B /* CustomCellBackground.h in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1121BC034E500D23F5B /* CustomCellBackground.h */; };
+		53C8F11F1BC034E500D23F5B /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1131BC034E500D23F5B /* CustomCellBackground.m */; };
+		53C8F1201BC034E500D23F5B /* RFduino.h in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1141BC034E500D23F5B /* RFduino.h */; };
+		53C8F1211BC034E500D23F5B /* RFduino.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1151BC034E500D23F5B /* RFduino.m */; };
+		53C8F1221BC034E500D23F5B /* RFduinoDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1161BC034E500D23F5B /* RFduinoDelegate.h */; };
+		53C8F1231BC034E500D23F5B /* RfduinoManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1171BC034E500D23F5B /* RfduinoManager.h */; };
+		53C8F1241BC034E500D23F5B /* RfduinoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1181BC034E500D23F5B /* RfduinoManager.m */; };
+		53C8F1251BC034E500D23F5B /* RFduinoManagerDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F1191BC034E500D23F5B /* RFduinoManagerDelegate.h */; };
+		53C8F1261BC034E500D23F5B /* ScanViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F11A1BC034E500D23F5B /* ScanViewController.h */; };
+		53C8F1271BC034E500D23F5B /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8F11B1BC034E500D23F5B /* ScanViewController.m */; };
+		53C8F12B1BC045A000D23F5B /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C8F1281BC045A000D23F5B /* RobotKit.framework */; settings = {ASSET_TAGS = (); }; };
+		53C8F12C1BC045A000D23F5B /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53C8F1291BC045A000D23F5B /* RobotUIKit.bundle */; settings = {ASSET_TAGS = (); }; };
+		53C8F12D1BC045A000D23F5B /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C8F12A1BC045A000D23F5B /* RobotUIKit.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +53,8 @@
 /* Begin PBXFileReference section */
 		53C8F0D51BC0321200D23F5B /* PalletteRF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalletteRF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C8F0D91BC0321200D23F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		53C8F0DB1BC0321300D23F5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		53C8F0DC1BC0321300D23F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		53C8F0DE1BC0321300D23F5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		53C8F0DF1BC0321300D23F5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53C8F0DE1BC0321300D23F5B /* AppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		53C8F0DF1BC0321300D23F5B /* AppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
 		53C8F0E21BC0321300D23F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53C8F0E41BC0321300D23F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53C8F0E71BC0321300D23F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,23 @@
 		53C8F0F91BC0321300D23F5B /* PalletteRFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalletteRFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C8F0FD1BC0321300D23F5B /* PalletteRFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalletteRFUITests.m; sourceTree = "<group>"; };
 		53C8F0FF1BC0321300D23F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C8F10B1BC032EA00D23F5B /* rfduino */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rfduino; path = "/Users/oliverhoffman/Projects/RFduinoApps/iPhone Apps/rfduino"; sourceTree = "<absolute>"; };
+		53C8F10D1BC033F000D23F5B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		53C8F1101BC034E500D23F5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53C8F1111BC034E500D23F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53C8F1121BC034E500D23F5B /* CustomCellBackground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		53C8F1131BC034E500D23F5B /* CustomCellBackground.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		53C8F1141BC034E500D23F5B /* RFduino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFduino.h; sourceTree = "<group>"; };
+		53C8F1151BC034E500D23F5B /* RFduino.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFduino.m; sourceTree = "<group>"; };
+		53C8F1161BC034E500D23F5B /* RFduinoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFduinoDelegate.h; sourceTree = "<group>"; };
+		53C8F1171BC034E500D23F5B /* RfduinoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RfduinoManager.h; sourceTree = "<group>"; };
+		53C8F1181BC034E500D23F5B /* RfduinoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RfduinoManager.m; sourceTree = "<group>"; };
+		53C8F1191BC034E500D23F5B /* RFduinoManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFduinoManagerDelegate.h; sourceTree = "<group>"; };
+		53C8F11A1BC034E500D23F5B /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		53C8F11B1BC034E500D23F5B /* ScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		53C8F1281BC045A000D23F5B /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		53C8F1291BC045A000D23F5B /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
+		53C8F12A1BC045A000D23F5B /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C8F12B1BC045A000D23F5B /* RobotKit.framework in Frameworks */,
+				53C8F10E1BC033F000D23F5B /* CoreBluetooth.framework in Frameworks */,
+				53C8F12D1BC045A000D23F5B /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,22 @@
 		53C8F0CC1BC0321200D23F5B = {
 			isa = PBXGroup;
 			children = (
+				53C8F1281BC045A000D23F5B /* RobotKit.framework */,
+				53C8F1291BC045A000D23F5B /* RobotUIKit.bundle */,
+				53C8F12A1BC045A000D23F5B /* RobotUIKit.framework */,
+				53C8F1101BC034E500D23F5B /* AppDelegate.h */,
+				53C8F1111BC034E500D23F5B /* AppDelegate.m */,
+				53C8F1121BC034E500D23F5B /* CustomCellBackground.h */,
+				53C8F1131BC034E500D23F5B /* CustomCellBackground.m */,
+				53C8F1141BC034E500D23F5B /* RFduino.h */,
+				53C8F1151BC034E500D23F5B /* RFduino.m */,
+				53C8F1161BC034E500D23F5B /* RFduinoDelegate.h */,
+				53C8F1171BC034E500D23F5B /* RfduinoManager.h */,
+				53C8F1181BC034E500D23F5B /* RfduinoManager.m */,
+				53C8F1191BC034E500D23F5B /* RFduinoManagerDelegate.h */,
+				53C8F11A1BC034E500D23F5B /* ScanViewController.h */,
+				53C8F11B1BC034E500D23F5B /* ScanViewController.m */,
+				53C8F10D1BC033F000D23F5B /* CoreBluetooth.framework */,
 				53C8F0D71BC0321200D23F5B /* PalletteRF */,
 				53C8F0F11BC0321300D23F5B /* PalletteRFTests */,
 				53C8F0FC1BC0321300D23F5B /* PalletteRFUITests */,
@@ -101,10 +151,8 @@
 		53C8F0D71BC0321200D23F5B /* PalletteRF */ = {
 			isa = PBXGroup;
 			children = (
-				53C8F0DB1BC0321300D23F5B /* AppDelegate.h */,
-				53C8F0DC1BC0321300D23F5B /* AppDelegate.m */,
-				53C8F0DE1BC0321300D23F5B /* ViewController.h */,
-				53C8F0DF1BC0321300D23F5B /* ViewController.m */,
+				53C8F0DE1BC0321300D23F5B /* AppViewController.h */,
+				53C8F0DF1BC0321300D23F5B /* AppViewController.m */,
 				53C8F0E11BC0321300D23F5B /* Main.storyboard */,
 				53C8F0E41BC0321300D23F5B /* Assets.xcassets */,
 				53C8F0E61BC0321300D23F5B /* LaunchScreen.storyboard */,
@@ -207,6 +255,12 @@
 				TargetAttributes = {
 					53C8F0D41BC0321200D23F5B = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = EBNJH7FBZW;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					53C8F0ED1BC0321300D23F5B = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -245,7 +299,9 @@
 			files = (
 				53C8F0E81BC0321300D23F5B /* LaunchScreen.storyboard in Resources */,
 				53C8F0E51BC0321300D23F5B /* Assets.xcassets in Resources */,
+				53C8F10C1BC032EA00D23F5B /* rfduino in Resources */,
 				53C8F0E31BC0321300D23F5B /* Main.storyboard in Resources */,
+				53C8F12C1BC045A000D23F5B /* RobotUIKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +326,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53C8F0E01BC0321300D23F5B /* ViewController.m in Sources */,
-				53C8F0DD1BC0321300D23F5B /* AppDelegate.m in Sources */,
+				53C8F11C1BC034E500D23F5B /* AppDelegate.h in Sources */,
+				53C8F11D1BC034E500D23F5B /* AppDelegate.m in Sources */,
+				53C8F11E1BC034E500D23F5B /* CustomCellBackground.h in Sources */,
+				53C8F11F1BC034E500D23F5B /* CustomCellBackground.m in Sources */,
+				53C8F1201BC034E500D23F5B /* RFduino.h in Sources */,
+				53C8F1211BC034E500D23F5B /* RFduino.m in Sources */,
+				53C8F1221BC034E500D23F5B /* RFduinoDelegate.h in Sources */,
+				53C8F1231BC034E500D23F5B /* RfduinoManager.h in Sources */,
+				53C8F1241BC034E500D23F5B /* RfduinoManager.m in Sources */,
+				53C8F1251BC034E500D23F5B /* RFduinoManagerDelegate.h in Sources */,
+				53C8F1261BC034E500D23F5B /* ScanViewController.h in Sources */,
+				53C8F1271BC034E500D23F5B /* ScanViewController.m in Sources */,
+				53C8F0E01BC0321300D23F5B /* AppViewController.m in Sources */,
 				53C8F0DA1BC0321200D23F5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,10 +478,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PalletteRF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = OH.PalletteRF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +501,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PalletteRF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = OH.PalletteRF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

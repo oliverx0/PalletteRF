@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RFduinoDelegate.h"
+#import "RFduino.h"
 
-@interface ViewController : UIViewController
+@interface AppViewController : UIViewController<RFduinoDelegate>
 
+@property(nonatomic, strong) RFduino *rfduino;
 
 @end
+
 
